@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--configurar el navegador-->
-    <meta charset="utf-8"> <!--codificacion de texto, permite los acentos o caracteres especiales--><!--elementos autocerrados, meta permite agregar mas informacion acerca del navegador-->
+    <meta charset="utf-8">
     <title>Primer Script</title>
 </head>
 <body>
-    <!--estructura de la pagina web-->
-    <h1> Título de HTML </h1> <!--solo debe haber un solo titulo, es como si fuera la portada de un libro-->
-        <h2> Capítulo 1 </h2>
-            <h3> Seccion 1.1 </h3> <!--tabuladores, espacios no significativo: el navegador lo ignora-->
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+    <h1> Título de HTML </h1> 
+    <p id="inicio">
+        Tabla de Contenidos: <br/>
+        <a href="#capitulo1">Capitulo 1</a> <br/><!--hipervínculo ancla, sirven para navegar dentro del mismo archivo html-->
+        <a href="#capitulo2">Capitulo 2</a><br/>
+        <a href="#capitulo3">Capitulo 3</a><br/>
+        <a href="#capitulo4">Capitulo 4</a><br/>
+        <a href="#capitulo5">Capitulo 5</a><br/>
+        <a href="#capitulo6">Capitulo 6</a>
 
-        <h2> Capítulo 2 </h2> 
-    <!--  
-    <h4> </h4>
-    <h5> </h5>
-    <h6> </h6> 
-    -->
+        <!--hipervínculo RELATIVOS y ABSOLUTO, sirven para redirigir a un recursos(assets digitales, algo tangible, como imagenes) u otro recurso que no esta dentro de la pág html. Dominio: dentro de mi misma estrucutra de archivos 
+        RELATIVOS: recurso en mi Dominio
+        ABSOLUTOS: referencia a un dominio externo-->
+    </p>
+
+    <a href="index.html">Ir a Home</a> <!--HIPERVINCULO RELATIVO-->
+
+        <h2 id="capitulo1"> Capítulo 1 </h2> <!--id → identificador, solo puede existir un id por cada valor-->
+        <h3> Seccion 1.1 </h3> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <a href="#inicio">Inicio</a>
+
+        <h2 id="capitulo2"> Capítulo 2 </h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <a href="#inicio">Inicio</a>
+        
+        <h2 id="capitulo3"> Capítulo 3 </h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <a href="#inicio">Inicio</a>
+
+        <h2 id="capitulo4"> Capítulo 4 </h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <a href="#inicio">Inicio</a>
+
+        <h2 id="capitulo5"> Capítulo 5 </h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <a href="#inicio">Inicio</a>
+
+        <h2 id="capitulo6"> Capítulo 6 </h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, cum. Enim dolorem pariatur modi ab velit eligendi impedit, earum quod suscipit natus, deleniti odio id fugiat voluptatibus magnam quos possimus? </p>
+        <a href="#inicio">Inicio</a>
+
+    
 </body>
 </html>
-    <!--ejemplo de html, bien formado-->
