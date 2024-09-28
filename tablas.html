@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tablas en HTML</title>
+</head>
+
+<body>
+    <h1> Tablas en HTML</h1> <!--representan data de forma tabular-->
+
+    <h2>e.g. Ventas</h2>
+    <p>The abbreviation “i.e.” stands for id est, which is Latin for “that is.” <br />The abbreviation “e.g.” stands for
+        the Latin phrase exempli gratia, meaning “for example.”</p>
+    <table border="1"> <!--primero se definen los registros y luego las columnas-->
+        <thead>
+            <tr>
+                <th colspan="5">Numero de Ventas por Cuart del Año</th>
+            </tr>
+            <tr> <!--table row, fila-->
+                <th>Zona</th>
+                <th> Ciudad </th> <!--table heading-->
+                <th> Q1 </th>
+                <th> Q2 </th>
+                <th> Q3 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Centro-Sur</td>
+                <td>Tegucigalpa</td> <!--table data-->
+                <td>13</td>
+                <td>15</td>
+                <td>10</td>
+                <!--<td>omg</td>   el dato queda por fuera-->
+            </tr>
+            <tr>
+                <td>Choluteca</td> <!--table data-->
+                <td>8</td>
+                <td colspan="2">10</td>
+                <!-- <td>10</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">Nor-Occidente</td>
+                <td>San Pedro Sula</td> <!--table data-->
+                <td>18</td>
+                <td>20</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>La Ceiba</td> <!--table data-->
+                <!-- <td>Nor-Occidente</td> -->
+                <td>18</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>57</td>
+                <td>65</td>
+                <td>47</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+</body>
+
+</html>

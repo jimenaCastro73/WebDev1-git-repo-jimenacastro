@@ -1,0 +1,28 @@
+<!-- TIPOS DE IMÁGENES → vectores .svg y mapas de bits .svg  -->
+<!-- una pagina contiene combinacion de ambos tipos -->
+<!-- 1080 x 1200 -->
+<!-- imagen > escalar imagen > tamaño: 300 x 400 y resolucion: 72.000 PARA ESCRITORIO -->
+<!-- para mobile 300 x 300 _ 130 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <h1>Multimedia</h1>
+    <h2>Imágenes</h2>
+    <img src="imgs/copy_jms_desktop.jpg" alt="retrato de Jimena Castro" /> <!--naturaleza fluida-->
+    <br />
+    <picture>
+        <!-- basado en seleccion de dispositivos.. -->
+         <source srcset="imgs/copy_jms_desktop.jpg" media="(min-width:720px)"/>
+         <img src="imgs/copy_jms_mobile.jpg" alt="Retrato Jimena Castro"/>
+    </picture>
+</body>
+
+</html>
