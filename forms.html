@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios de HTML</h1>
+    <form action="forms.html" method="GET">
+        <!-- La serialización es un proceso que consiste en convertir un objeto en una secuencia de bytes para almacenar el objeto o transmitirlo a la memoria, a una base de datos o a un archivo. Su propósito principal es guardar el estado de un objeto para poder volver a crearlo cuando sea necesario -->
+        <label for="txtNombre">Nombre:</label>
+        <input id="txtNombre" name="txtName" type="text" placeholder="Nombre Completo" />
+        <br />
+        <label for="txtCorreo">Correo:</label>
+        <input id="txtCorreo" name="txteMail" type="email" placeholder="tucorreo@gmail.com" />
+        <br />
+
+        <label>Ciudad</label>
+        <label for="optTeg">Tegucigalpa</label>
+        <input type="radio" id="optTeg" name="optCiudad" value="TEG" />
+        &nbsp; <!-- espacio ligado, ese espacio tiene que ir¡!, non-blocking space-->
+        <label for="optSps">San Pedro Sula</label>
+        <input type="radio" id="optSps" name="optCiudad" value="SPS" />
+        &nbsp;
+        <label for="optLcb">La Ceiba</label>
+        <input type="radio" id="optLcb" name="optCiudad" value="LCB" checked />
+        &nbsp;
+        <br />
+
+        <label for="cmbCiudad">Ciudades 2:</label>
+        <select id="cmbCiudad" name="cmbCiudad">
+            <option value="TEG" selected> Tegucigalpa</option>
+            <option value="SPS"> San Pedro Sula</option>
+            <option value="LCB"> La Ceiba</option>
+        </select>
+        <br />
+        
+        <label for="txtLongText">Texto Largo</label>
+        <textarea id="txtLongText" name="txtBio" placeholder="Descripción"
+        ></textarea>
+
+        <br />
+        <button type="submit" name="btnEnviar">Enviar</button>
+
+    </form>
+</body>
+
+</html>
