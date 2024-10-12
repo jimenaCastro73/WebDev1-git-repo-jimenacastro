@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descripción de la página">
+    <meta name="keywords" content="palabras clave, SEO">
+    <title>Título de la Página</title>
+</head>
+
+<body>
+    <header>
+        <!-- Encabezado del sitio web -->
+        <h1>Encabezado Principal</h1>
+        <nav>
+            <!-- Menú de navegación -->
+            <a href="#seccion1">Seccion 1</a>
+            <a href="#seccion2">Seccion 2</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Contenido principal del sitio web -->
+        <section id="seccion1">
+            <h2>Sección 1</h2>
+            <p>Este es un párrafo de ejemplo. Puedes agregar texto aquí para proporcionar información a tus visitantes.
+            </p>
+            <a href="#seccion1">Ir a la Sección 1 (Ancla)</a>
+            <br>
+            <a href="pagina2.html">Ir a la Página 2 (URL Relativa)</a>
+            <br>
+            <a href="https://www.unicah.edu" target="_blank">Ir a la Página 3 (URL Absoluta)</a>
+
+            <h3>Formatos de Texto</h3>
+            <p><strong>Negrita</strong></p>
+            <p><em>Cursiva</em></p>
+            <p><mark>Resaltado</mark></p>
+            <p><code>Código</code></p>
+            <p>
+            <pre>Texto preformateado {} con  [] espacios</pre>
+            </p>
+            <p>Salto de línea:<br>forzado.</p>
+
+            <h3>Listas</h3>
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ol>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+            </ul>
+
+            <h3>Tablas</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Encabezado 1</th>
+                        <th>Encabezado 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Celda combinada</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Pie 1</td>
+                        <td>Pie 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+        <section id="seccion2">
+            <h2>Sección 2</h2>
+            <h3>Formularios</h3>
+            <form action="cheat_sheet.html" method="get">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <br>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico">
+                    <br>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+                    <br>
+                    <input type="checkbox" name="suscripcion" value="1" id="suscripcion">
+                    <label for="suscripcion">Suscribirse al boletín</label>
+                    <br>
+                    <label for="ciudad">Selecciona tu ciudad:</label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="nueva-york">Nueva York</option>
+                        <option value="los-angeles">Los Ángeles</option>
+                        <option value="chicago">Chicago</option>
+                    </select><br>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Descripción"></textarea><br>
+                    <button type="submit" name="btnEnviar">Enviar</button>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Preferencias de Color</legend>
+                    <input type="radio" name="color" value="rojo" id="rojo">
+                    <label for="rojo">Rojo</label>
+                    <br>
+                    <input type="radio" name="color" value="verde" id="verde">
+                    <label for="verde">Verde</label>
+                    <br>
+                    <input type="radio" name="color" value="azul" id="azul">
+                    <label for="azul">Azul</label><br>
+                </fieldset>
+            </form>
+
+            <h3>Multimedia</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <br>
+            <video controls width="480" height="270">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <br>
+            <picture>
+                <source srcset="imagen-grande.jpg" media="(min-width: 800px)">
+                <source srcset="imagen-pequeña.jpg" media="(max-width: 799px)">
+                <img src="imagen-predeterminada.jpg" alt="Texto alternativo">
+            </picture>
+        </section>
+    </main>
+    <footer>
+        <!-- Pie de página del sitio web -->
+        <p>Derechos de autor &copy; 2024</p>
+    </footer>
+</body>
+
+</html>
+<!-- ```
+
+**Explicación de los elementos y etiquetas:**
+
+* **DOCTYPE**: Define el tipo de documento HTML (HTML5 en este caso).
+* **html**:  Elemento raíz del documento.
+* **head**: Contiene metadatos como el título, la descripción, las palabras clave, etc.
+* **title**: Define el título que aparece en la pestaña del navegador.
+* **meta**: Proporciona información sobre la página, como el conjunto de caracteres y la descripción.
+* **body**: Contiene el contenido visible de la página.
+* **header**: Representa el encabezado de la página. 
+* **nav**: Contiene enlaces de navegación. 
+* **main**:  Define el contenido principal de la página. 
+* **section**: Agrupa contenido relacionado dentro de la página. 
+* **h1-h6**: Encabezados de diferentes niveles de importancia.
+* **p**: Define un párrafo de texto.
+* **a**: Crea un enlace de hipertexto.
+* **strong**: Resalta texto en negrita. 
+* **em**:  Resalta texto en cursiva. 
+* **mark**: Resalta texto con un marcador. 
+* **code**: Define texto como código. 
+* **pre**: Muestra texto preformateado.
+* **br**: Inserta un salto de línea.
+* **ol**: Crea una lista ordenada (numerada).
+* **ul**: Crea una lista desordenada (con viñetas).
+* **li**: Define un elemento de lista.
+* **table**: Crea una tabla.
+* **tr**: Define una fila en una tabla.
+* **td**: Define una celda de datos en una tabla.
+* **th**: Define una celda de encabezado en una tabla.
+* **colspan**: Combina celdas horizontalmente en una tabla.
+* **rowspan**: Combina celdas verticalmente en una tabla.
+* **thead**: Define el encabezado de una tabla.
+* **tbody**: Define el cuerpo de una tabla.
+* **tfoot**: Define el pie de una tabla.
+* **form**: Crea un formulario HTML.
+* **input**: Crea un campo de entrada de formulario.
+* **label**: Asocia una etiqueta de texto a un elemento de formulario.
+* **select**: Crea una lista desplegable.
+* **option**: Define una opción en una lista desplegable.
+* **textarea**: Crea un área de texto multilínea.
+* **fieldset**: Agrupa elementos de formulario relacionados.
+* **legend**: Define una leyenda para un grupo de elementos de formulario.
+* **audio**: Inserta un reproductor de audio.
+* **source**: Define diferentes fuentes para multimedia.
+* **video**: Inserta un reproductor de video.
+* **picture**: Proporciona imágenes adaptables.
+* **img**: Inserta una imagen.
+
+**Nota:** Este código HTML incluye la mayoría de los elementos mencionados en las fuentes. Sin embargo, es posible que se necesiten ajustes adicionales dependiendo de las necesidades específicas del sitio web.  -->
